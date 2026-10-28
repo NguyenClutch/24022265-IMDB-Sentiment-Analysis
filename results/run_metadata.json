@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "device": "cpu",
+  "torch": "2.14.0+cpu",
+  "sklearn": "1.9.1",
+  "dataset_sha256": {
+    "train": "db47d16b5c297cc0dd625e519c81319c24c9149e70e8496de5475f6fa928342c",
+    "test": "b52e26e2f872d282ffac460bf9770b25ac6f102cda0e6ca7158df98c94e8b3da"
+  },
+  "train": 20000,
+  "validation": 5000,
+  "test": 25000,
+  "max_len": 256,
+  "vocabulary_size": 20000,
+  "tfidf_features": 20000,
+  "tfidf_preprocessing_seconds": 11.34192280000002
+}
