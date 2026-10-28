@@ -257,7 +257,7 @@ display(Markdown(f"""### Nhận xét từ kết quả thực nghiệm
 
 ### Kết luận và hạn chế
 
-Bài đã thực hiện LSTM và so sánh với mạng neural cơ bản MLP cùng hai phương pháp học máy Logistic Regression, SVM trên cùng phân chia IMDB. Chỉ có một seed và một cấu hình kiến trúc cho mỗi mạng; chưa thể khái quát rằng một họ mô hình luôn tốt hơn họ còn lại. Chưa đánh giá khả năng tổng quát sang miền khác hoặc tiếng Việt.
+Thí nghiệm so sánh LSTM, MLP, Logistic Regression và SVM trên cùng phân chia dữ liệu IMDB. Chỉ có một seed và một cấu hình kiến trúc cho mỗi mạng; chưa thể khái quát rằng một họ mô hình luôn tốt hơn họ còn lại. Chưa đánh giá khả năng tổng quát sang miền khác hoặc tiếng Việt.
 
 Hướng cải thiện: thử độ dài 512 token, BiLSTM hoặc embedding tiền huấn luyện; mở rộng tìm kiếm siêu tham số theo validation; chạy nhiều seed và báo cáo trung bình ± độ lệch chuẩn. Mỗi mở rộng phải giữ test độc lập, tránh điều chỉnh dựa trên kết quả test đã xem.
 """))
