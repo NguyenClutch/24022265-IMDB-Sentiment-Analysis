@@ -1,18 +1,17 @@
-# Bài tập RNN/LSTM/GRU: Sentiment analysis trên IMDB
+# Phân tích cảm xúc trên IMDB
 
-Tệp chính: **IMDB_LSTM_Comparison.ipynb**. Phần giải thích và phân tích được viết bằng tiếng Việt.
-
+So sánh LSTM với mạng neural truyền thẳng (MLP), Linear SVM và Logistic Regression trong phân loại cảm xúc đánh giá phim.
 
 ## Cấu trúc dự án
 
 ```text
-IMDB_LSTM_Comparison.ipynb   # Bài làm hoàn chỉnh, đã có output thực nghiệm
+IMDB_LSTM_Comparison.ipynb   # Notebook và kết quả thực nghiệm
 run_experiment.py          # Chạy lại toàn bộ thí nghiệm bằng Python
 requirements.txt           # Các thư viện cần thiết
 results/                   # Bảng kết quả, lịch sử huấn luyện và biểu đồ
 ```
 
-Để xem bài làm, mở **[notebook đã chạy](IMDB_LSTM_Comparison.ipynb)** ngay trên GitHub. Không cần chạy lại để xem kết quả.
+[Notebook](IMDB_LSTM_Comparison.ipynb) chứa mã nguồn, bảng kết quả và biểu đồ của lần chạy.
 
 ![So sánh các mô hình](results/comparison.png)
 
@@ -25,7 +24,7 @@ python run_experiment.py
 
 Lệnh này huấn luyện lại cả bốn mô hình và tạo các tệp kết quả. Dataset được tải tự động vào `data/`, thư mục này được bỏ qua khi đưa lên GitHub.
 
-## Nội dung đáp ứng yêu cầu
+## Phương pháp
 
 - Chọn LSTM trong nhóm RNN/LSTM/GRU.
 - Phân loại tích cực/tiêu cực trên 50.000 review IMDB có nhãn.
@@ -48,13 +47,7 @@ Khuyến nghị Python 3.11–3.13. Trong môi trường riêng, cài thư việ
 
 Notebook tải hai split parquet từ https://huggingface.co/datasets/stanfordnlp/imdb và kiểm tra số lượng/nhãn. Dữ liệu không nhãn không được sử dụng. Thư mục `results/` chứa các bảng, biểu đồ và thông tin môi trường của lần chạy. Cùng seed vẫn có thể cho kết quả hơi khác khi thay phần cứng hoặc phiên bản thư viện.
 
-## Nộp bài
-
-Có thể nộp trực tiếp tệp `.ipynb` đã chạy. Nếu nộp GitHub, tải notebook, README, requirements và thư mục results lên kho mã của bạn rồi nộp liên kết. Không đưa thư mục `data/` hoặc dữ liệu IMDB lên kho mã. Điền thông tin sinh viên theo quy định lớp nếu cần.
-
-Nguồn bài toán: Maas et al. (2011), https://aclanthology.org/P11-1015/ và https://ai.stanford.edu/~amaas/data/sentiment/.
-
-## Kết quả đã chạy thực tế
+## Kết quả thực nghiệm
 
 Notebook đã chạy toàn bộ trên CPU với seed 42. Các output đã được lưu trong tệp `.ipynb`.
 
