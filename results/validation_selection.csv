@@ -1,0 +1,5 @@
+model,C,validation_F1
+Logistic Regression,0.5,0.8946117274167987
+Logistic Regression,2.0,0.9020618556701031
+Linear SVM,0.5,0.9057581191472405
+Linear SVM,2.0,0.8943381180223285
