@@ -33,20 +33,6 @@ Lệnh này huấn luyện lại cả bốn mô hình và tạo các tệp kết
 - Từ vựng và IDF chỉ học trên train; checkpoint và C chọn bằng validation.
 - Báo cáo accuracy, precision, recall, F1, ROC-AUC, thời gian; biểu đồ và ma trận nhầm lẫn; phân tích lỗi và hạn chế.
 
-## Chạy trên Google Colab
-
-1. Tải notebook lên https://colab.research.google.com/.
-2. Có thể chọn Runtime → Change runtime type → GPU để chạy nhanh hơn.
-3. Nếu thiếu thư viện, bỏ dấu `#` ở dòng `%pip install` trong ô đầu, chạy ô đó rồi khởi động lại kernel.
-4. Chọn Runtime → Run all. Cần Internet ở lần tải dữ liệu đầu.
-5. Lưu/tải notebook sau khi hoàn tất để giữ các output.
-
-## Chạy trên máy cá nhân
-
-Khuyến nghị Python 3.11–3.13. Trong môi trường riêng, cài thư viện bằng `pip install -r requirements.txt`, sau đó chạy `jupyter notebook` và mở notebook. Tốc độ phụ thuộc phần cứng; không có thời gian chạy cố định.
-
-Notebook tải hai split parquet từ https://huggingface.co/datasets/stanfordnlp/imdb và kiểm tra số lượng/nhãn. Dữ liệu không nhãn không được sử dụng. Thư mục `results/` chứa các bảng, biểu đồ và thông tin môi trường của lần chạy. Cùng seed vẫn có thể cho kết quả hơi khác khi thay phần cứng hoặc phiên bản thư viện.
-
 ## Kết quả thực nghiệm
 
 Notebook đã chạy toàn bộ trên CPU với seed 42. Các output đã được lưu trong tệp `.ipynb`.
