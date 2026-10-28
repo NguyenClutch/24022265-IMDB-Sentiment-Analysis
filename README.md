@@ -2,27 +2,7 @@
 
 So sánh LSTM với mạng neural truyền thẳng (MLP), Linear SVM và Logistic Regression trong phân loại cảm xúc đánh giá phim.
 
-## Cấu trúc dự án
-
-```text
-IMDB_LSTM_Comparison.ipynb   # Notebook và kết quả thực nghiệm
-run_experiment.py          # Chạy lại toàn bộ thí nghiệm bằng Python
-requirements.txt           # Các thư viện cần thiết
-results/                   # Bảng kết quả, lịch sử huấn luyện và biểu đồ
-```
-
-[Notebook](IMDB_LSTM_Comparison.ipynb) chứa mã nguồn, bảng kết quả và biểu đồ của lần chạy.
-
-![So sánh các mô hình](results/comparison.png)
-
-### Chạy bằng Python
-
-```bash
-pip install -r requirements.txt
-python run_experiment.py
-```
-
-Lệnh này huấn luyện lại cả bốn mô hình và tạo các tệp kết quả. Dataset được tải tự động vào `data/`, thư mục này được bỏ qua khi đưa lên GitHub.
+[Notebook bài làm](IMDB_LSTM_Comparison.ipynb)
 
 ## Phương pháp
 
